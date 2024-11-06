@@ -288,6 +288,6 @@ end
 
 SLASH_DIMINISH1 = "/diminish"
 SlashCmdList.DIMINISH = function()
-    InterfaceOptionsFrame_OpenToCategory(Panel)
-    InterfaceOptionsFrame_OpenToCategory(Panel) -- double to fix blizz bug
+    Settings.OpenToCategory(Settings.GetCategory("Diminish_Options").ID)
+    --InterfaceOptionsFrame_OpenToCategory(Panel) -- double to fix blizz bug
 end
